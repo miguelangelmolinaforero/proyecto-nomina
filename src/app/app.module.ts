@@ -8,6 +8,8 @@ import { EmpleadosComponent } from './components/empleados/empleados.component';
 import { DescuentosComponent } from './components/descuentos/descuentos.component';
 import { DevengosComponent } from './components/devengos/devengos.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { SideBarComponent } from './components/side-bar/side-bar.component';
+import { IngresoEmpleadosComponent } from './components/ingreso-empleados/ingreso-empleados.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { EstadisticasComponent } from './components/estadisticas/estadisticas.co
     EmpleadosComponent,
     DescuentosComponent,
     DevengosComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    SideBarComponent,
+    IngresoEmpleadosComponent,
   ],
   imports: [
     BrowserModule,

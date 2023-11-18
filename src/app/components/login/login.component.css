@@ -32,6 +32,7 @@
     border: none;
     border-bottom: 1px solid #6460E9;
     outline: none;
+    font-size: 16px;
 }
 
 .login-options input:focus {
@@ -43,6 +44,7 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    font-size: 14px;
 }
 
 .checkbox_options {
@@ -63,6 +65,8 @@
     color: #fff;
     background: #6460E9;
     padding: 16px 35px;
+    text-decoration: none;
+    border-radius: 10px;
 } 
 .sign_in_button:hover {
     background-color: #4741e4;
@@ -88,6 +92,5 @@
 
 .banner_container img {
     position: fixed;
-    /* width: 100%; */
     bottom: 0;
 }
