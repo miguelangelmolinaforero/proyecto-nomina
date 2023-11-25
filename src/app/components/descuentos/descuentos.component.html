@@ -6,43 +6,27 @@
         </div>
         <table class="tabla_descuentos">
             <thead>
-                <th>Nombres</th>
-                <th>Apellidos</th>
+                <th>Nombresy Apellidos</th>
                 <th>Cargo</th>
                 <th>Área</th>
-                <th>Salario</th>
-                <th>Horas Extra</th>
+                <th>EPS</th>
+                <th>Pension</th>
+                <th>Fondo</th>
             </thead>
             <tbody>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                </tr>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                </tr>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
+                <tr *ngFor="let empleado of empleados">
+                    <td>{{ empleado.Nombre_Apellidos }}</td>
+                    <td>{{ empleado.Cargo }}</td>
+                    <td>{{ empleado.Departamento }}</td>
+                    <td>{{ empleado.Eps_Salud }}</td>
+                    <td>{{ empleado.Pension }}</td>
+                    <td>{{ empleado.Fdo_Sol }}</td>
                 </tr>
             </tbody>
         </table>
-        <div class="action_buttons">
+        <!-- <div class="action_buttons">
             <a href="">Generar Reporte</a>
             <a href="">Editar Descuentos</a>
-        </div>
+        </div> -->
     </div>
 </div>

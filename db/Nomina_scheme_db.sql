@@ -97,6 +97,12 @@ CREATE TABLE Nomina_Empleado (
     FOREIGN KEY (Id_Cedula) REFERENCES Personal(Id_Cedula)
 );
 
+-- Creación de la tabla Login
+CREATE TABLE [Login] (
+    [user] varchar(100),
+    [password] varchar(100),
+);
+
 -- Definición de las relaciones entre las tablas
 ALTER TABLE Personal
 ADD CONSTRAINT FK_Cargo FOREIGN KEY (id_cargo) REFERENCES Cargo(id_cargo);

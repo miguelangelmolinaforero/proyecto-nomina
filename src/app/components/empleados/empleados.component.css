@@ -14,6 +14,8 @@
 
 .info_empleados {
   flex: 1;
+  height: 100vh; /* o el valor que desees */
+  overflow: hidden; /* Oculta el scroll del contenedor principal */
 }
 
 h1 {
@@ -25,6 +27,8 @@ h1 {
   width: 80%;
   margin: 50px auto;
   border-collapse: collapse;
+  overflow-y: auto; /* Añade scroll vertical solo cuando sea necesario */
+  max-height: calc(100vh - 100px);
 }
 
 .tabla_empleados {

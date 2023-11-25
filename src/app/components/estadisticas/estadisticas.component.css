@@ -15,6 +15,8 @@
 .info_empleados {
   flex: 1;
   background-color: #f8f8f8;
+  height: 100vh; /* o el valor que desees */
+  overflow: hidden; /* Oculta el scroll del contenedor principal */
 }
 
 h1 {
@@ -24,11 +26,15 @@ h1 {
 
 .estadisticas {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  overflow-y: auto; /* Añade scroll vertical solo cuando sea necesario */
+  max-height: calc(100vh - 100px);
 }
 
 .grafica {
-  width: 400px;
-  height: 400px;
+  min-width: 300px;
+  width: 48.5%;
+  height: 500px;
 }

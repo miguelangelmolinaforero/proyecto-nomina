@@ -6,43 +6,50 @@
         </div>
         <table class="tabla_empleados">
             <thead>
-                <th>Nombres</th>
-                <th>Apellidos</th>
+                <th>Cédula</th>
+                <th>Nombres y Apellidos</th>
                 <th>Cargo</th>
                 <th>Área</th>
                 <th>Salario</th>
-                <th>Horas Extra</th>
+                <th>Tipo Contrato</th>
+                <th>Tipo Cuenta Bancaria</th>
+                <!-- <th>Acción</th> -->
             </thead>
             <tbody>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                </tr>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                </tr>
-                <tr>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
-                    <td>Dato</td>
+                <tr *ngFor="let empleado of empleados">
+                    <td>{{ empleado.Id_Cedula }}</td>
+                    <td>{{ empleado.Nombre_Apellidos }}</td>
+                    <td>{{ empleado.Cargo }}</td>
+                    <td>{{ empleado.Departamento }}</td>
+                    <td>{{ empleado.Salario }}</td>
+                    <td>{{ empleado.Tipo_Contrato }}</td>
+                    <td>{{ empleado.Tipo_Cuenta_Bancaria }}</td>
+                    <!-- <td class="action_buttons"><a href="">Editar</a></td> -->
                 </tr>
             </tbody>
         </table>
-        <div class="action_buttons">
-            <a href="">Generar Reporte</a>
-            <a href="">Editar empleados</a>
+        <!-- <div class="action_buttons">
+            <a href="">Ingresar empleados</a>
         </div>
+        <form (ngSubmit)="agregarEmpleado()">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Id_Cedula" placeholder="Cédula">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Nombre_Apellidos" placeholder="Nombre y Apellidos">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Cargo" placeholder="Cargo">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Departamento" placeholder="Departamento">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Salario" placeholder="Salario">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Tipo_Contrato" placeholder="Tipo Contrato">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Sub_Tpte" placeholder="Subsidio">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Tipo_Cuenta_Bancaria" placeholder="Nombre y Apellidos">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Gastos_Rep" placeholder="Gastos">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Sobresueldo" placeholder="Sobresueldo">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Viaticos" placeholder="Viaticos">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Comisiones" placeholder="Comisiones">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Primas" placeholder="Primas">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Eps_Salud" placeholder="Eps_Salud">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Pension" placeholder="Pension">
+            <input type="text" [(ngModel)]="nuevoEmpleado.Fdo_Sol" placeholder="Fdo_Sol">
+          
+            <button type="submit">Agregar Empleado</button>
+          </form> -->
     </div>
 </div>
