@@ -1,4 +1,4 @@
-ALTER PROCEDURE InformacionCompletaEmpleados
+CREATE PROCEDURE InformacionCompletaEmpleados
 AS
 BEGIN
     SELECT p.Id_Cedula, p.Nombre_Apellidos, p.Cargo_Empl, c.nombre AS Cargo, p.Dpto_Area, d.nombre AS Departamento, p.Salario, p.Sub_Tpte, p.Gastos_Rep, 
@@ -33,7 +33,7 @@ BEGIN
 END
 
 
-ALTER PROCEDURE [dbo].[DevengosTotalesPorEmpleado]
+CREATE PROCEDURE [dbo].[DevengosTotalesPorEmpleado]
 AS
 BEGIN
     SELECT Id_Cedula, 
@@ -43,7 +43,7 @@ BEGIN
 END;
 
 
-ALTER PROCEDURE [dbo].[DescuentosTotalesPorEmpleado]
+CREATE PROCEDURE [dbo].[DescuentosTotalesPorEmpleado]
 AS
 BEGIN
     SELECT Id_Cedula, 
@@ -53,7 +53,7 @@ BEGIN
 END;
 
 
-ALTER PROCEDURE MostrarPrimasOrdenadas
+CREATE PROCEDURE MostrarPrimasOrdenadas
 AS
 BEGIN
     SELECT Id_Cedula, Nombre_Apellidos AS Nombre_Empleado, Primas
@@ -62,7 +62,7 @@ BEGIN
 END;
 
 
-ALTER PROCEDURE MostrarMayoresSueldos
+CREATE PROCEDURE MostrarMayoresSueldos
 AS
 BEGIN
     SELECT Id_Cedula, Nombre_Apellidos AS Nombre_Empleado, Salario
